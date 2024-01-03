@@ -1,21 +1,29 @@
-# React Starter
+# investigraph.dev
 
-A minimal starting point for interactive applications or one-pagers.
+A simple landing page for the data pipeline framework **investigraph**
 
-The starterkit is based on these libraries:
+https://investigraph.dev
+
+The stack is based on these libraries:
 
 - [react](https://react.dev/)
 - [joy-ui](https://mui.com/joy-ui/getting-started/)
 - [emotion](https://emotion.sh/docs/styled)
 
-It is based on [a react starter by wbkd](https://github.com/wbkd/react-starter)
+It is based on [joy-starter](https://github.com/investigativedata/joy-starter)
 
 ## Getting started
 
 **[Create a new Github repository with the template](https://github.com/investigativedata/joy-starter/generate)** or clone the repo:
 
+you are now ready to develop your app.
+
+## Development
+
+Check out repo: 
+
 ```sh
-git clone git@github.com:investigativedata/joy-starter.git && cd joy-starter
+git clone git@github.com:investigativedata/investigraph.dev && cd investigraph.dev
 ```
 
 then install the dependencies via [npm](https://npmjs.org):
@@ -23,10 +31,6 @@ then install the dependencies via [npm](https://npmjs.org):
 ```sh
 npm install
 ```
-
-you are now ready to develop your app.
-
-## Development
 
 Builds the application and starts a webserver with hot loading.
 Runs on [localhost:8080](http://localhost:8080/)
@@ -43,4 +47,4 @@ Builds a minified version of the application in the build folder.
 npm run build
 ```
 
-Additionally, a zipped version of the bundle is added as `build.zip`. We often use this for our clients to upload the application to their own servers.
+Additionally, a zipped version of the bundle is added as `build.zip`. This allows simple static site hosting anywhere.

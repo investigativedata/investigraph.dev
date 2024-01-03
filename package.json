@@ -1,14 +1,14 @@
 {
-  "name": "joy-starter",
-  "version": "8.0.0",
-  "description": "lightweight react starterkit including webpack, joy ui",
+  "name": "investigraph.dev",
+  "version": "0.0.1",
+  "description": "Landing page for the data pipeline framework investigraph",
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.dev.js",
     "build": "cross-env BABEL_ENV=production webpack --config webpack/webpack.config.prod.js && npm run zip",
     "zip": "zip -r build/build.zip build"
   },
   "repository": {
-    "url": "git@github.com:investigativedata/joy-starter.git",
+    "url": "git@github.com:investigativedata/investigraph.dev.git",
     "type": "git"
   },
   "browserslist": "> 0.25%, ie 11",
