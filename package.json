@@ -45,7 +45,7 @@
     "prettier": "^3.1.1",
     "react-refresh": "^0.14.0",
     "react-svg-loader": "^3.0.3",
-    "style-loader": "^3.3.3",
+    "style-loader": "^3.3.4",
     "webpack": "^5.89.0",
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",
