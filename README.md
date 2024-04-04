@@ -1,50 +1,30 @@
-# investigraph.dev
+# React + TypeScript + Vite
 
-A simple landing page for the data pipeline framework **investigraph**
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-https://investigraph.dev
+Currently, two official plugins are available:
 
-The stack is based on these libraries:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- [react](https://react.dev/)
-- [joy-ui](https://mui.com/joy-ui/getting-started/)
-- [emotion](https://emotion.sh/docs/styled)
+## Expanding the ESLint configuration
 
-It is based on [joy-starter](https://github.com/investigativedata/joy-starter)
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## Getting started
+- Configure the top-level `parserOptions` property like this:
 
-**[Create a new Github repository with the template](https://github.com/investigativedata/joy-starter/generate)** or clone the repo:
-
-you are now ready to develop your app.
-
-## Development
-
-Check out repo: 
-
-```sh
-git clone git@github.com:investigativedata/investigraph.dev && cd investigraph.dev
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
 ```
 
-then install the dependencies via [npm](https://npmjs.org):
-
-```sh
-npm install
-```
-
-Builds the application and starts a webserver with hot loading.
-Runs on [localhost:8080](http://localhost:8080/)
-
-```sh
-npm run start
-```
-
-## Build
-
-Builds a minified version of the application in the build folder.
-
-```sh
-npm run build
-```
-
-Additionally, a zipped version of the bundle is added as `build.zip`. This allows simple static site hosting anywhere.
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
