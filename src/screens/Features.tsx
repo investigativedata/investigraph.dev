@@ -70,7 +70,7 @@ const LoadStep = () => (
 export default function FeatureScreen() {
   return (
     <Screen background="warning">
-      <Typography level="h1" textAlign="center">
+      <Typography level="h1" component="h2" textAlign="center">
         Following industry standard for data engineering
       </Typography>
       <Typography textAlign="center" maxWidth="50rem" m="0 auto 8rem">
