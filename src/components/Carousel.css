@@ -1,0 +1,27 @@
+.carousel-container {
+  padding-bottom: 52px;
+}
+
+.carousel-dot-list {
+  gap: 2rem;
+}
+
+.carousel-dot-list li {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-dot-list .react-multi-carousel-dot button {
+  border: none;
+  background-color: #1A1A1A;
+  opacity: 0.4;
+  width: 5px;
+  height: 5px;
+}
+
+
+.carousel-dot-list .react-multi-carousel-dot--active button {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
