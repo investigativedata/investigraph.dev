@@ -5,6 +5,7 @@ import { CssVarsProvider } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
 import { theme } from "@investigativedata/style";
 import Page from "./Page";
+import './index.css';
 
 function App() {
   return (
