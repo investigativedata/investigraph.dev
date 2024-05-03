@@ -7,7 +7,7 @@ export default function TutorialScreen() {
       <Typography level="h1" textAlign="center">
         Get started
       </Typography>
-      <Typography textAlign="center">
+      <Typography textAlign="center" maxWidth="50rem" m="0 auto 8rem">
         In our tutorial we show you how to extract, transform and load your data with investigraph
       </Typography>
     </Screen>
