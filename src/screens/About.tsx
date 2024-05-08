@@ -6,8 +6,8 @@ import Typography from "@mui/joy/Typography";
 import { OpenMoji, Screen, Drawer } from "@investigativedata/style";
 
 const LegalNotice = () => (
-  <Grid container maxWidth="lg" justifyContent="center">
-    <Grid md={3}>
+  <Grid container maxWidth="lg" justifyContent="flex-start">
+    <Grid md={4}>
       <Typography level="body-md">
         IDIO Daten Import Export Gmbh
         <br />
@@ -17,7 +17,7 @@ const LegalNotice = () => (
         <Link href="mailto:hi@investigativedata.org">hi@investigativedata.org</Link>
       </Typography>
     </Grid>
-    <Grid md={3}>
+    <Grid md={4}>
       <Typography level="body-md">
         REGISTRED
         <br />
@@ -36,7 +36,6 @@ const LegalNotice = () => (
         DE361014839
       </Typography>
     </Grid>
-    <Grid md={3}></Grid>
   </Grid>
 );
 
@@ -47,14 +46,15 @@ export default function AboutScreen() {
         <Typography level="h1" textAlign="center">
           About
         </Typography>
-        <Typography textAlign="center">
+        <Typography textAlign="center" maxWidth="50rem" m="0 auto 8rem">
           investigraph is developed by{" "}
           <Link href="https://investigativedata.io">investigativedata.io</Link>, the data
           engineering agency for investigative journalism.
         </Typography>
-        <Typography textAlign="center">Contact us via hi@investigativedata.org</Typography>
-        <OpenMoji icon="incoming envelope" sx={{ maxWidth: "200px" }} />
-        <Button color="success" href="mailto:hi@investigativedata.org">
+        <Typography textAlign="center" maxWidth="50rem" m="0 auto 8rem">
+          Contact us via hi@investigativedata.org</Typography>
+        <OpenMoji icon="incoming envelope" sx={{ maxWidth: "200px", margin: '0 auto' }} />
+        <Button color="success" href="mailto:hi@investigativedata.org" sx={{ margin: '0 auto' }}>
           Write us an E-Mail
         </Button>
       </Box>

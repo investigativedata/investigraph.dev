@@ -68,10 +68,10 @@ const IntegrationHero = () => (
 export default function TechnologyScreen() {
   return (
     <Screen background="danger">
-      <Typography level="h1" textAlign="center">
+      <Typography level="h1" component="h2" textAlign="center" maxWidth="20ch" m="0 auto">
         Part of an established ecosystem
       </Typography>
-      <Typography textAlign="center">
+      <Typography textAlign="center" maxWidth="50rem" m="0 auto 8rem">
         investigraph is built on top of industry-standard technology and connects to well-known
         tools within the research landscape.
       </Typography>
